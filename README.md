@@ -23,12 +23,13 @@ Instead of dropping rows or using simple mean/mode, I leveraged **Random Forest 
 🧠 **11 different Models** — From Linear Regression to Neural Network Regressors, battled it out to crush **Mean Squared Errors**, but the takeaway?
 
 👉 **More complex ≠ better predictions**.  
-> - I tried to **log transform** a few numerical columns that were right-skewed, but the models made way worse predictions, because they overfit the clumped-up data points! Simply **clipping the (very few) outliers** boosted the performance several fold.  
+> - I tried to **log transform** a few numerical columns that were right-skewed, but the models made way worse predictions, because they **overfit the clumped-up data points!**
+> - Simply clipping the (very few) outliers boosted the performance several fold.  
 > - Despite tuning, **Neural Networks were outperformed by simpler ensemble models**.
 
 ---
 
-### 🥇 In the end, the good ol' **Random Forest Regressor** dominated the leaderboard — delivering:
+### 🥇 In the end, the good ol' **Random Forest Regressor** dominated — delivering:
 
 ✅ **Max Baseline R²**: `97.8%`  
 ✅ **Tuned, Cross-Validated, Generalized R²**: `97.6%`
